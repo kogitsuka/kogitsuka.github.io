@@ -1,14 +1,10 @@
 {
-  "updated": "2026-11-03",
+  "updated": "2026-11-04",
   "name": { "ja": "扇塚 和希", "en": "Kazuki Ogitsuka" },
   "researchmap": "https://researchmap.jp/kazuki_ogitsuka",
   "orcid": "https://orcid.org/0009-0003-6809-3717",
   "dblp": "https://dblp.org/pid/443/9384.html",
-  "field": { "ja": "計算量理論", "en": "Computational complexity" },
-  "summary": {
-    "ja": "計算量理論を中心に、局所密格子や最短ベクトル問題など、格子に関わる問題の計算困難性を研究しています。",
-    "en": "My research focuses on computational complexity, particularly the hardness of lattice problems, including locally dense lattices and the Shortest Vector Problem."
-  },
+  "field": { "ja": "理論計算機科学（特に計算量理論）", "en": "Theoretical computer science (especially computational complexity)" },
   "affiliations": [
     {
       "institution": { "ja": "総合研究大学院大学", "en": "The Graduate University for Advanced Studies, SOKENDAI" },

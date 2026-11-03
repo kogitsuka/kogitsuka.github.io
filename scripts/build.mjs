@@ -10,7 +10,7 @@ const words = {
   ja: {
     language: '言語', affiliation: '現在の所属', education: '学歴・経歴（Education）',
     educationSub: '学歴', experienceSub: '経歴', research: '研究分野',
-    publications: '査読付き論文（Publications）', presentations: '発表歴（Presentations）',
+    publications: '論文（Publications）', presentations: '発表歴（Presentations）',
     international: '国際会議', domestic: '国内会議・研究会', awards: '受賞歴',
     authorNote: '†を付けた論文を除き、著者名はアルファベット順です。',
     program: 'プログラム', record: '発表情報', awardsNote: '', updated: '最終更新',
@@ -18,7 +18,7 @@ const words = {
   en: {
     language: 'Language', affiliation: 'Current affiliations', education: 'Education & Experience',
     educationSub: 'Education', experienceSub: 'Research experience', research: 'Research areas',
-    publications: 'Publications (peer-reviewed)', presentations: 'Presentations',
+    publications: 'Publications', presentations: 'Presentations',
     international: 'International conferences', domestic: 'Domestic conferences & workshops', awards: 'Awards',
     authorNote: 'Authors are listed in alphabetical order, except for papers marked with †.',
     program: 'Program', record: 'Details', awardsNote: 'Award names are translated from Japanese.', updated: 'Last updated',
@@ -33,10 +33,10 @@ function render(lang) {
   const enHref = lang === 'en' ? './index.html' : './en/index.html';
   const name = t(data.name);
   const alternateName = data.name[lang === 'ja' ? 'en' : 'ja'];
-  const title = `${name} | ${t(data.field)}`;
+  const title = data.name.en;
   const description = lang === 'ja'
-    ? `${name}の研究者個人サイト。所属、学歴、研究分野、査読付き論文、発表歴、受賞歴。`
-    : `${name}: affiliations, education, research areas, peer-reviewed publications, presentations, and awards.`;
+    ? `${name}の研究者個人サイト。所属、学歴、研究分野、論文、発表歴、受賞歴。`
+    : `${name}: affiliations, education, research areas, publications, presentations, and awards.`;
   const link = (url, label) => `<a href="${escape(url)}">${label}</a>`;
   const authors = list => list.map(escape).join(', ');
   const history = (items, className) => `<ul class="${className}">\n${items.map(item => `        <li>${escape(t(item.period))}: ${escape(t(item.institution))} ${escape(t(item.description))}</li>`).join('\n')}\n      </ul>`;
@@ -78,7 +78,7 @@ ${data.affiliations.map(item => `        <li>${escape(t(item.institution))} ${es
     <section id="research">
       <h2>${w.research}</h2>
       <ul>
-        <li>${escape(t(data.field))} — ${escape(t(data.summary))}</li>
+        <li>${escape(t(data.field))}</li>
       </ul>
     </section>
     <section id="publications">

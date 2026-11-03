@@ -15,7 +15,7 @@
 
 英語の所属・学科名は、researchmap英語ページの表記を参照しています。受賞名の英語表記は内容を伝えるための参考訳です。
 
-## 査読付き論文
+## 論文
 
 ### On the Complexity of Locally Dense Lattices
 
