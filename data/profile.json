@@ -1,0 +1,139 @@
+{
+  "updated": "2026-11-03",
+  "name": { "ja": "扇塚 和希", "en": "Kazuki Ogitsuka" },
+  "researchmap": "https://researchmap.jp/kazuki_ogitsuka",
+  "orcid": "https://orcid.org/0009-0003-6809-3717",
+  "dblp": "https://dblp.org/pid/443/9384.html",
+  "field": { "ja": "計算量理論", "en": "Computational complexity" },
+  "summary": {
+    "ja": "計算量理論を中心に、局所密格子や最短ベクトル問題など、格子に関わる問題の計算困難性を研究しています。",
+    "en": "My research focuses on computational complexity, particularly the hardness of lattice problems, including locally dense lattices and the Shortest Vector Problem."
+  },
+  "affiliations": [
+    {
+      "institution": { "ja": "総合研究大学院大学", "en": "The Graduate University for Advanced Studies, SOKENDAI" },
+      "department": { "ja": "先端学術院 情報学コース", "en": "Informatics Program" },
+      "position": { "ja": "5年一貫制博士課程", "en": "Five-year doctoral program" }
+    },
+    {
+      "institution": { "ja": "日本学術振興会", "en": "Japan Society for the Promotion of Science" },
+      "department": { "ja": "特別研究員（DC2）", "en": "Research Fellow (DC2)" },
+      "position": { "ja": "2026年4月 – 現在", "en": "Apr 2026 – Present" }
+    }
+  ],
+  "experience": [
+    {
+      "period": { "ja": "2026年4月 – 現在", "en": "Apr 2026 – Present" },
+      "institution": { "ja": "日本学術振興会", "en": "Japan Society for the Promotion of Science" },
+      "description": { "ja": "特別研究員（DC2）", "en": "Research Fellow (DC2)" }
+    }
+  ],
+  "education": [
+    {
+      "period": { "ja": "2023年4月 – 現在", "en": "Apr 2023 – Present" },
+      "institution": { "ja": "総合研究大学院大学", "en": "The Graduate University for Advanced Studies, SOKENDAI" },
+      "description": { "ja": "先端学術院 情報学コース · 5年一貫制博士課程", "en": "Informatics Program · Five-year doctoral program" }
+    },
+    {
+      "period": { "ja": "2021年4月 – 2023年3月", "en": "Apr 2021 – Mar 2023" },
+      "institution": { "ja": "豊橋技術科学大学", "en": "Toyohashi University of Technology" },
+      "description": { "ja": "工学部 情報・知能工学系", "en": "Department of Computer Science and Engineering, Faculty of Engineering" }
+    },
+    {
+      "period": { "ja": "2018年4月 – 2021年3月", "en": "Apr 2018 – Mar 2021" },
+      "institution": { "ja": "熊本高等専門学校", "en": "Kumamoto National College of Technology" },
+      "description": { "ja": "人間情報システム工学科", "en": "Department of Human-Oriented Information Systems Engineering" }
+    },
+    {
+      "period": { "ja": "2016年4月 – 2018年3月", "en": "Apr 2016 – Mar 2018" },
+      "institution": { "ja": "熊本高等専門学校", "en": "Kumamoto National College of Technology" },
+      "description": { "ja": "機械知能システム工学科", "en": "Department of Mechanical and Intelligent Systems Engineering" }
+    }
+  ],
+  "publications": [
+    {
+      "year": "2026",
+      "badge": "MFCS 2026",
+      "type": { "ja": "国際会議論文", "en": "Conference paper" },
+      "title": "On the Complexity of Locally Dense Lattices",
+      "authors": ["Shuichi Hirahara", "Kazuki Ogitsuka"],
+      "venue": "51st International Symposium on Mathematical Foundations of Computer Science (MFCS 2026)",
+      "details": "LIPIcs 386, 66:1–66:18, 2026",
+      "doi": "https://doi.org/10.4230/LIPIcs.MFCS.2026.66",
+      "pdf": "https://drops.dagstuhl.de/storage/00lipics/lipics-vol386-mfcs2026/LIPIcs.MFCS.2026.66/LIPIcs.MFCS.2026.66.pdf",
+      "preprint": "https://arxiv.org/abs/2608.14975"
+    },
+    {
+      "year": "2026",
+      "badge": "RANDOM 2026",
+      "type": { "ja": "国際会議論文", "en": "Conference paper" },
+      "title": "One-Sided-Error Parameterized Reductions for the Minimum Distance and Shortest Vector Problems",
+      "authors": ["Shuichi Hirahara", "Kazuki Ogitsuka"],
+      "venue": "Approximation, Randomization, and Combinatorial Optimization. Algorithms and Techniques (APPROX/RANDOM 2026)",
+      "details": "LIPIcs 392, 46:1–46:22, 2026",
+      "doi": "https://doi.org/10.4230/LIPIcs.APPROX/RANDOM.2026.46",
+      "pdf": "https://drops.dagstuhl.de/storage/00lipics/lipics-vol392-approx-random2026/LIPIcs.APPROX-RANDOM.2026.46/LIPIcs.APPROX-RANDOM.2026.46.pdf",
+      "preprint": "https://arxiv.org/abs/2608.14305"
+    },
+    {
+      "year": "2021",
+      "badge": "IJIET",
+      "nonAlphabeticalAuthors": true,
+      "type": { "ja": "学術雑誌論文", "en": "Journal article" },
+      "title": "Development of Online Learning Material for Data Science Programming Using 3D Puzzle",
+      "authors": ["Naoki Yamamoto", "Akio Ishida", "Kazuki Ogitsuka", "Nobuhiro Oishi", "Jun Murakami"],
+      "venue": "International Journal of Information and Education Technology",
+      "details": "11(4), 154–163, 2021",
+      "doi": "https://doi.org/10.18178/ijiet.2021.11.4.1505",
+      "pdf": "https://www.ijiet.org/vol11/1505-TN008.pdf"
+    }
+  ],
+  "presentations": {
+    "international": [
+      {
+        "date": { "ja": "2026年8月24日", "en": "24 Aug 2026" },
+        "title": { "ja": "On the Complexity of Locally Dense Lattices", "en": "On the Complexity of Locally Dense Lattices" },
+        "authors": ["Shuichi Hirahara", "Kazuki Ogitsuka"],
+        "venue": { "ja": "MFCS 2026 · パリ（フランス）", "en": "MFCS 2026 · Paris, France" },
+        "url": "https://mfcs2026.irif.fr/schedule.html"
+      },
+      {
+        "date": { "ja": "2026年8月21日", "en": "21 Aug 2026" },
+        "title": { "ja": "One-Sided-Error Parameterized Reductions for the Minimum Distance and Shortest Vector Problems", "en": "One-Sided-Error Parameterized Reductions for the Minimum Distance and Shortest Vector Problems" },
+        "authors": ["Shuichi Hirahara", "Kazuki Ogitsuka"],
+        "venue": { "ja": "RANDOM 2026 · ボストン（米国）", "en": "RANDOM 2026 · Boston, USA" },
+        "url": "https://cs-people.bu.edu/aene/approxrandom2026/program.pdf"
+      }
+    ],
+    "domestic": [
+      {
+        "date": { "ja": "2026年1月28日", "en": "28 Jan 2026" },
+        "title": { "ja": "On the (Meta-)Complexity of Locally Dense Lattice", "en": "On the (Meta-)Complexity of Locally Dense Lattice" },
+        "authors": ["Shuichi Hirahara", "Kazuki Ogitsuka"],
+        "venue": { "ja": "冬のLAシンポジウム", "en": "Winter LA Symposium" },
+        "url": "https://researchmap.jp/kazuki_ogitsuka/presentations/53793791"
+      },
+      {
+        "date": { "ja": "2024年12月16日", "en": "16 Dec 2024" },
+        "title": { "ja": "局所密格子問題の計算量について", "en": "Complexity of the Locally Dense Lattice Problem" },
+        "authors": ["Shuichi Hirahara", "Kazuki Ogitsuka"],
+        "venue": { "ja": "電子情報通信学会 コンピュテーション研究会（COMP）", "en": "IEICE Technical Committee on Computation (COMP)" },
+        "url": "https://ken.ieice.org/ken/paper/20241216Hcga/"
+      }
+    ]
+  },
+  "awards": [
+    {
+      "date": { "ja": "2023年3月", "en": "Mar 2023" },
+      "title": { "ja": "2022年度 学業成績優秀賞", "en": "Academic Excellence Award, FY2022" },
+      "organization": { "ja": "電子情報通信学会 東海支部", "en": "IEICE Tokai Section" },
+      "url": "https://www.ieice.org/jpn/about/j_pdf/2023/2022jh.pdf"
+    },
+    {
+      "date": { "ja": "2021年3月", "en": "Mar 2021" },
+      "title": { "ja": "2020年度 成績優秀賞", "en": "Academic Excellence Award, FY2020" },
+      "organization": { "ja": "電子情報通信学会 九州支部", "en": "IEICE Kyushu Section" },
+      "url": "https://www.ieice.org/kyushu/2020sei/"
+    }
+  ]
+}

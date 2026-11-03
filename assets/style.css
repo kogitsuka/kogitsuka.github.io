@@ -1,0 +1,36 @@
+html {
+  color-scheme: light;
+  background: white;
+  color: black;
+}
+
+body {
+  max-width: 960px;
+  margin: 24px auto;
+  padding: 0 20px;
+  font-family: Arial, "Noto Sans JP", Meiryo, sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  overflow-wrap: break-word;
+}
+
+h1 { font-size: 1.8em; }
+h2 { margin-top: 1.5em; font-size: 1.3em; }
+h3 { font-size: 1.05em; }
+ul { padding-left: 1.5em; }
+li { margin: 0.45em 0; }
+a { color: #0000cc; }
+a:visited { color: #551a8b; }
+a:focus-visible { outline: 2px solid black; outline-offset: 3px; }
+footer { margin-top: 2em; font-size: 0.9em; }
+
+@media (max-width: 600px) {
+  body { margin: 16px auto; padding: 0 16px; }
+  h1 { font-size: 1.5em; }
+}
+
+@media print {
+  body { max-width: none; margin: 0; padding: 0; }
+  nav { display: none; }
+  a, a:visited { color: black; }
+}
