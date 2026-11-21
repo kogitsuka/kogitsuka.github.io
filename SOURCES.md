@@ -66,6 +66,7 @@ Naoki Yamamoto, Akio Ishida, Kazuki Ogitsuka, Nobuhiro Oishi, and Jun Murakami. 
 
 ### 国内会議
 
+- **One-Sided-Error Parameterized Reductions for the Minimum Distance and Shortest Vector Problems** — 夏のLAシンポジウム、2026年7月28日。[公式プログラム](https://la-symposium.github.io/2026/la2026s_program.pdf)の発表番号[15]、10:30–10:55、著者順は平原秀一・扇塚和希。扇塚和希に講演者の印が付いていることを確認。2026年11月21日追加。ページ上では他の発表と同様にリンクを表示しません。
 - **On the (Meta-)Complexity of Locally Dense Lattice** — 冬のLAシンポジウム、2026年1月28日。[researchmap](https://researchmap.jp/kazuki_ogitsuka/presentations/53793791)
 - **局所密格子問題の計算量について** — コンピュテーション研究会、2024年12月16日。[researchmap](https://researchmap.jp/kazuki_ogitsuka/presentations/53793769)、[電子情報通信学会の発表情報](https://ken.ieice.org/ken/paper/20241216Hcga/)
 
