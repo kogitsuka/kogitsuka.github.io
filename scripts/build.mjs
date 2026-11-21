@@ -37,7 +37,14 @@ function render(lang) {
   const description = lang === 'ja'
     ? `${name}の研究者個人サイト。自己紹介、所属、学歴、職歴、研究分野、論文、発表歴、受賞歴。`
     : `${name}: introduction, affiliations, education, occupation, research areas, publications, presentations, and awards.`;
-  const link = (url, label) => `<a href="${escape(url)}">${label}</a>`;
+  const link = (url, label) => {
+    const target = new URL(url);
+    if (lang === 'en' && target.hostname === 'researchmap.jp') {
+      target.searchParams.set('lang', 'en');
+      url = target.href;
+    }
+    return `<a href="${escape(url)}">${label}</a>`;
+  };
   const authors = (list, decorate = false) => list.map(author => {
     const label = escape(author);
     if (!decorate) return label;
@@ -71,7 +78,7 @@ function render(lang) {
   <header>
     <nav aria-label="${w.language}"><a href="${jaHref}" lang="ja" hreflang="ja" ${lang === 'ja' ? 'aria-current="page"' : 'data-language-link'}>日本語</a> | <a href="${enHref}" lang="en" hreflang="en" ${lang === 'en' ? 'aria-current="page"' : 'data-language-link'}>English</a></nav>
     <h1>${escape(name)}${lang === 'en' ? ` <span lang="ja">(${escape(alternateName)})</span>` : ''}</h1>
-    <p>${link(data.researchmap + (lang === 'en' ? '?lang=en' : ''), 'researchmap')} / ${link(data.orcid, 'ORCID')} / ${link(data.dblp, 'dblp')}</p>
+    <p>${link(data.researchmap, 'researchmap')} / ${link(data.orcid, 'ORCID')} / ${link(data.dblp, 'dblp')}</p>
   </header>
   <main id="main">
     <section id="introduction" aria-label="${w.introduction}">
