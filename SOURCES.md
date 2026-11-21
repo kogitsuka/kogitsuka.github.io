@@ -1,5 +1,15 @@
 # 掲載情報の確認元
 
+## 2026年11月21日の更新
+
+- 自己紹介、博士課程4年生の表記、研究上の関心、連絡先は本人指定の内容を掲載。英語の学年表記は本人指定の「fourth-year Ph.D student」、指導教員名は「Dr. Shuichi Hirahara」を使用。
+- 連絡先は `ogitsuka [at] nii [dot] ac [dot] jp` と表示し、メールリンクは作成していません。
+- 新規論文：Shuichi Hirahara, Bingkai Lin, Yuwei Liu, Kazuki Ogitsuka. “Deterministic Parameterized Inapproximability of the Shortest Vector and Minimum Distance Problems.” arXiv:2611.26273v1, 2026。[arXivの書誌情報](https://arxiv.org/abs/2611.26273v1)で題目、著者順、初版の日付（2026年11月19日）を確認。本人指定により資料リンクはarXivのみ。
+- 指導教員および新規論文の共著者のリンクは本人指定：[Shuichi Hirahara](https://researchmap.jp/shuichi.hirahara)、[Bingkai Lin](https://sites.google.com/site/bingkai314159/home)、[Yuwei Liu](https://ywliu00.github.io/)。
+- 2021年論文の共著者はresearchmapの研究者ページへリンク：[Naoki Yamamoto](https://researchmap.jp/read0182624)、[Akio Ishida](https://researchmap.jp/7000002677)、[Nobuhiro Oishi](https://researchmap.jp/result_oishi)、[Jun Murakami](https://researchmap.jp/read0146302)。大石信弘および石田明男のresearchmapリンクは[豊橋技術科学大学の公式研究者一覧](https://www.tut.ac.jp/seeds/researcher/)でも確認。
+- 学歴と職歴を別セクションにし、発表歴はリンクを付けずに表示。
+- 論文タイトルはリンクなしのテキストとし、資料リンクは各論文の末尾に表示。
+
 確認日：2026年11月1日
 
 氏名・所属・学歴・研究分野・受賞歴・国内発表歴は、本人の公開プロフィールをもとにまとめています。研究業績をすべて網羅するものではありません。更新時には各出典の最新情報を確認してください。
@@ -67,3 +77,4 @@ Naoki Yamamoto, Akio Ishida, Kazuki Ogitsuka, Nobuhiro Oishi, and Jun Murakami. 
 - **2020年度 成績優秀賞** — 電子情報通信学会 九州支部、2021年3月。[公式受賞者一覧](https://www.ieice.org/kyushu/2020sei/)
 
 受賞歴はresearchmapに掲載された2件を収録しています。英語の受賞名は公式名称を確認できたものではなく、参考訳です。
+

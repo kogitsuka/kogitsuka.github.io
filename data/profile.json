@@ -1,10 +1,37 @@
 {
-  "updated": "2026-11-04",
+  "updated": "2026-11-21",
   "name": { "ja": "扇塚 和希", "en": "Kazuki Ogitsuka" },
   "researchmap": "https://researchmap.jp/kazuki_ogitsuka",
   "orcid": "https://orcid.org/0009-0003-6809-3717",
   "dblp": "https://dblp.org/pid/443/9384.html",
   "field": { "ja": "理論計算機科学（特に計算量理論）", "en": "Theoretical computer science (especially computational complexity)" },
+  "introduction": {
+    "ja": {
+      "student": "総合研究大学院大学情報学コース（国立情報学研究所）の5年一貫制博士課程4年生です。",
+      "advisorPrefix": "",
+      "advisorName": "平原秀一先生",
+      "advisorSuffix": "の指導を受けています。",
+      "research": "理論計算機科学（特に計算量理論）に興味があります。今は格子問題の計算困難性と暗号への応用に焦点を当てています。"
+    },
+    "en": {
+      "student": "I am a fourth-year Ph.D student in the five-year doctoral program in Informatics at The Graduate University for Advanced Studies, SOKENDAI (National Institute of Informatics).",
+      "advisorPrefix": "I am advised by ",
+      "advisorName": "Dr. Shuichi Hirahara",
+      "advisorSuffix": ".",
+      "research": "I am interested in theoretical computer science, especially computational complexity. I am currently focusing on the computational complexity of lattice problems and their applications to cryptography."
+    }
+  },
+  "advisorUrl": "https://researchmap.jp/shuichi.hirahara",
+  "contact": "ogitsuka [at] nii [dot] ac [dot] jp",
+  "authorLinks": {
+    "Shuichi Hirahara": "https://researchmap.jp/shuichi.hirahara",
+    "Bingkai Lin": "https://sites.google.com/site/bingkai314159/home",
+    "Yuwei Liu": "https://ywliu00.github.io/",
+    "Naoki Yamamoto": "https://researchmap.jp/read0182624",
+    "Akio Ishida": "https://researchmap.jp/7000002677",
+    "Nobuhiro Oishi": "https://researchmap.jp/result_oishi",
+    "Jun Murakami": "https://researchmap.jp/read0146302"
+  },
   "affiliations": [
     {
       "institution": { "ja": "総合研究大学院大学", "en": "The Graduate University for Advanced Studies, SOKENDAI" },
@@ -47,6 +74,17 @@
     }
   ],
   "publications": [
+    {
+      "year": "2026",
+      "badge": "arXiv",
+      "type": { "ja": "プレプリント", "en": "Preprint" },
+      "title": "Deterministic Parameterized Inapproximability of the Shortest Vector and Minimum Distance Problems",
+      "authors": ["Shuichi Hirahara", "Bingkai Lin", "Yuwei Liu", "Kazuki Ogitsuka"],
+      "venue": "arXiv preprint",
+      "details": "arXiv:2611.26273v1, 2026",
+      "url": "https://arxiv.org/abs/2611.26273v1",
+      "preprint": "https://arxiv.org/abs/2611.26273v1"
+    },
     {
       "year": "2026",
       "badge": "MFCS 2026",
@@ -133,3 +171,4 @@
     }
   ]
 }
+
