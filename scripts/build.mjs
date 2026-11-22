@@ -9,7 +9,7 @@ const escape = value => String(value).replace(/[&<>"']/g, char => ({ '&': '&amp;
 const words = {
   ja: {
     language: '言語', introduction: '自己紹介', affiliation: '現在の所属', education: '学歴',
-    employment: '職歴', research: '研究分野',
+    employment: '職歴', research: '研究興味',
     publications: '論文', presentations: '発表歴',
     international: '国際会議', domestic: '国内会議・研究会', awards: '受賞歴',
     authorNote: '†を付けた論文を除き、著者名はアルファベット順です。',
@@ -17,7 +17,7 @@ const words = {
   },
   en: {
     language: 'Language', introduction: 'Introduction', affiliation: 'Current affiliations', education: 'Education',
-    employment: 'Occupation', research: 'Research areas',
+    employment: 'Occupation', research: 'Reserach Interests',
     publications: 'Publications', presentations: 'Presentations',
     international: 'International conferences', domestic: 'Domestic conferences & workshops', awards: 'Awards',
     authorNote: 'Authors are listed in alphabetical order, except for papers marked with †.',
@@ -35,8 +35,8 @@ function render(lang) {
   const alternateName = data.name[lang === 'ja' ? 'en' : 'ja'];
   const title = data.name.en;
   const description = lang === 'ja'
-    ? `${name}の研究者個人サイト。自己紹介、所属、学歴、職歴、研究分野、論文、発表歴、受賞歴。`
-    : `${name}: introduction, affiliations, education, occupation, research areas, publications, presentations, and awards.`;
+    ? `${name}の研究者個人サイト。自己紹介、所属、学歴、職歴、研究興味、論文、発表歴、受賞歴。`
+    : `${name}: introduction, affiliations, education, occupation, research interests, publications, presentations, and awards.`;
   const link = (url, label) => {
     const target = new URL(url);
     if (lang === 'en' && target.hostname === 'researchmap.jp') {
@@ -58,7 +58,7 @@ function render(lang) {
     const title = escape(item.title);
     const resources = [item.doi && link(item.doi, 'DOI'), item.pdf && link(item.pdf, 'PDF'), item.preprint && link(item.preprint, 'arXiv')]
       .filter(Boolean).map(resource => `[${resource}]`).join(' ');
-    return `        <li class="publication" lang="en">${item.nonAlphabeticalAuthors ? '† ' : ''}${authors(item.authors, true)}. ${title}. <i>${escape(item.venue)}</i>, ${escape(item.details)}.${resources ? ` ${resources}` : ''}</li>`;
+    return `        <li class="publication" lang="en">${item.nonAlphabeticalAuthors ? '† ' : ''}${authors(item.authors, true)}. ${title}. <i>${escape(item.venue)}</i>${item.details ? `, ${escape(item.details)}` : ''}.${resources ? ` ${resources}` : ''}</li>`;
   };
 
   return `<!doctype html>

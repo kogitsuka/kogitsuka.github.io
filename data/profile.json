@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-21",
+  "updated": "2026-11-22",
   "name": { "ja": "扇塚 和希", "en": "Kazuki Ogitsuka" },
   "researchmap": "https://researchmap.jp/kazuki_ogitsuka",
   "orcid": "https://orcid.org/0009-0003-6809-3717",
@@ -80,8 +80,8 @@
       "type": { "ja": "プレプリント", "en": "Preprint" },
       "title": "Deterministic Parameterized Inapproximability of the Shortest Vector and Minimum Distance Problems",
       "authors": ["Shuichi Hirahara", "Bingkai Lin", "Yuwei Liu", "Kazuki Ogitsuka"],
-      "venue": "arXiv preprint",
-      "details": "arXiv:2611.26273v1, 2026",
+      "venue": "preprint",
+      "details": "",
       "url": "https://arxiv.org/abs/2611.26273v1",
       "preprint": "https://arxiv.org/abs/2611.26273v1"
     },
