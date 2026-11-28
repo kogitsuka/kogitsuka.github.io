@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kogitsuka.github.io/sitemap.xml

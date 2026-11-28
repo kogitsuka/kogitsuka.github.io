@@ -5,6 +5,8 @@ import path from 'node:path';
 // No packages required. Generated pages also work when opened directly from disk.
 const root = fileURLToPath(new URL('../', import.meta.url));
 const data = JSON.parse(await readFile(path.join(root, 'data/profile.json'), 'utf8'));
+const siteUrl = 'https://kogitsuka.github.io/';
+const pageUrls = { ja: siteUrl, en: `${siteUrl}en/` };
 const escape = value => String(value).replace(/[&<>"']/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[char]));
 const words = {
   ja: {
@@ -34,9 +36,30 @@ function render(lang) {
   const name = t(data.name);
   const alternateName = data.name[lang === 'ja' ? 'en' : 'ja'];
   const title = data.name.en;
+  const compactJapaneseName = data.name.ja.replace(/\s+/g, '');
+  const canonicalUrl = pageUrls[lang];
   const description = lang === 'ja'
-    ? `${name}の研究者個人サイト。自己紹介、所属、学歴、職歴、研究興味、論文、発表歴、受賞歴。`
-    : `${name}: introduction, affiliations, education, occupation, research interests, publications, presentations, and awards.`;
+    ? `${compactJapaneseName}（${data.name.en}）の個人ページ。${data.affiliations[0].institution.ja} ${data.affiliations[0].department.ja}。${data.field.ja}の研究、論文、発表歴。`
+    : `${name} (${compactJapaneseName}), Ph.D student at SOKENDAI / National Institute of Informatics. Research in theoretical computer science and computational complexity.`;
+  const profile = {
+    '@context': 'https://schema.org',
+    '@type': 'ProfilePage',
+    '@id': `${canonicalUrl}#profile`,
+    url: canonicalUrl,
+    name: `${data.name.en} / ${compactJapaneseName}`,
+    inLanguage: lang,
+    dateModified: data.updated,
+    mainEntity: {
+      '@type': 'Person',
+      '@id': `${siteUrl}#person`,
+      name: data.name.en,
+      alternateName: [data.name.ja, compactJapaneseName],
+      url: siteUrl,
+      description: data.introduction[lang].research,
+      sameAs: [data.researchmap, data.orcid, data.dblp],
+    },
+  };
+  const structuredData = JSON.stringify(profile).replace(/</g, '\\u003c');
   const link = (url, label) => {
     const target = new URL(url);
     if (lang === 'en' && target.hostname === 'researchmap.jp') {
@@ -69,8 +92,11 @@ function render(lang) {
   <meta name="color-scheme" content="light">
   <title>${escape(title)}</title>
   <meta name="description" content="${escape(description)}">
-  <link rel="alternate" hreflang="ja" href="${jaHref}">
-  <link rel="alternate" hreflang="en" href="${enHref}">
+  <link rel="canonical" href="${canonicalUrl}">
+  <link rel="alternate" hreflang="ja" href="${pageUrls.ja}">
+  <link rel="alternate" hreflang="en" href="${pageUrls.en}">
+  <link rel="alternate" hreflang="x-default" href="${pageUrls.ja}">
+  <script type="application/ld+json">${structuredData}</script>
   <link rel="stylesheet" href="${prefix}assets/style.css">
   <script src="${prefix}assets/main.js" defer></script>
 </head>
@@ -137,5 +163,18 @@ ${data.awards.map(item => `        <li>${escape(t(item.date))}: ${link(item.url,
 await mkdir(path.join(root, 'en'), { recursive: true });
 await writeFile(path.join(root, 'index.html'), render('ja'), 'utf8');
 await writeFile(path.join(root, 'en/index.html'), render('en'), 'utf8');
-console.log('Generated index.html and en/index.html.');
+const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+${Object.values(pageUrls).map(url => `  <url>
+    <loc>${url}</loc>
+    <lastmod>${data.updated}</lastmod>
+    <xhtml:link rel="alternate" hreflang="ja" href="${pageUrls.ja}" />
+    <xhtml:link rel="alternate" hreflang="en" href="${pageUrls.en}" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="${pageUrls.ja}" />
+  </url>`).join('\n')}
+</urlset>
+`;
+await writeFile(path.join(root, 'sitemap.xml'), sitemap, 'utf8');
+await writeFile(path.join(root, 'robots.txt'), `User-agent: *\nAllow: /\n\nSitemap: ${siteUrl}sitemap.xml\n`, 'utf8');
+console.log('Generated Japanese and English pages, sitemap.xml and robots.txt.');
 
