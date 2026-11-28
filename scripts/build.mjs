@@ -92,6 +92,7 @@ function render(lang) {
   <meta name="color-scheme" content="light">
   <title>${escape(title)}</title>
   <meta name="description" content="${escape(description)}">
+${data.googleSiteVerification ? `  <meta name="google-site-verification" content="${escape(data.googleSiteVerification)}">` : ''}
   <link rel="canonical" href="${canonicalUrl}">
   <link rel="alternate" hreflang="ja" href="${pageUrls.ja}">
   <link rel="alternate" hreflang="en" href="${pageUrls.en}">
